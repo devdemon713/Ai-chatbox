@@ -11,17 +11,7 @@ exports.askGemini = async (req, res) => {
     });
 
     const prompt = `
-      ROLE:
-      You are an expert Historical Guide for the Konark Sun Temple.
-
-      YOUR KNOWLEDGE SOURCE:
-      1. Primary Context (The current page): "${pageContext}"
-      2. Your Internal Database: You have full permission to use your own knowledge about the temple's history, the legend of Dharmapada, the significance of the 24 wheels, the 7 horses, and Kalinga architecture.
-
-      TASK:
-      - If the user asks for "extra info" or anything related to the temple, architecture, or history, answer them in detail using your internal knowledge.
-      - NEVER say "I can't find info on that here" if the question is about the temple.
-      - Only refuse to answer if the question is totally unrelated (like coding, cooking, or math).
+   
 
       USER QUESTION: "${query}"
     `;
